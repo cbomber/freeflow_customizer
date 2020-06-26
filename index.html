@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Some kind of HTML canvas bullshit</title>
+  <meta name="description" content="Some kind of HTML canvas bullshit">
+  <meta name="author" content="butmuhwebsite">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+    
+    Base Color: <input name="Background Color Picker" type="color" id="base_picker" onchange="canvasDraw('base');"/>
+    Acid Wash Color: <input name="Acid Wash Color Picker" type="color" id="acid_wash_picker" onchange="canvasDraw('acid_wash');"/>
+    Fade Wash Color: <input name="Fade Wash Color Picker" type="color" id="fade_picker" onchange="canvasDraw('fade');"/>
+    Splash Color: <input name="Splash Wash Color Picker" type="color" id="splash_picker" onchange="canvasDraw('splash');"/>
+
+    <div id="container" class="container" data-model="caliber">
+      <canvas id="base" width="700px" height="408px"></canvas>
+
+      <canvas id="acid_wash" width="700px" height="408px"></canvas>
+      <canvas id="fade" width="700px" height="408px"></canvas>
+      <canvas id="splash" width="700px" height="408px"></canvas>
+
+      <canvas id="parts" width="700px" height="408px"></canvas>
+    </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
